@@ -1,0 +1,413 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Cabin", sans-serif;
+  background-color: #f2f8ff;
+  overflow-x: hidden;
+}
+
+ 
+/* Navbar  */
+
+ 
+ 
+
+
+.nav-item .nav-link {
+  font-weight: 500;
+
+  color: #3f3939;
+}
+
+.navbar-nav li {
+  margin-right: 15px;
+}
+
+.navbar-brand img {
+  height: 100px;
+}
+.dropdown-menu.dropdown-menu-light.dropdown-mobile {
+  right: auto;
+  left: -200px;
+}
+
+.dropdown-item {
+  display: flex;
+  width: auto;
+}
+.dropdown-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  object-fit: contain;
+}
+
+.products-dropdown,
+.companies-dropdown,
+.institutes-dropdown {
+  display: flex;
+  padding-top: 10px;
+}
+
+.products-dropdown a,
+.companies-dropdown a,
+.institutes-dropdown a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sign-up {
+  background: #1566d1;
+
+  border-radius: 6px;
+  width: 122px;
+  height: 50px;
+  color: white;
+}
+.sign-up:focus,
+.sign-up:hover {
+  color: white;
+}
+.login-signup {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+/* Navbar done */
+
+
+/* Main  */
+.hero {
+  display: flex;
+  margin-top: 5%;
+  padding: 0%;
+  justify-content: space-between;
+
+  align-items: center;
+
+  /* margin-bottom: 100px; */
+}
+
+.hero .left-side .intro-text span {
+  color: #3d80d9;
+}
+.hero .left-side .intro-text {
+  font-size: 3.5rem;
+
+  line-height: 1.1;
+  font-weight: 600;
+  color: #44484f;
+}
+
+/* CSS for carousel slider */
+div.carousel-inner {
+  height: 500px !important;
+  width: 450px;
+
+  /* margin: -80px auto 0 auto; */
+  /* margin: -80px auto 0 auto; */
+}
+.newsletter form {
+  padding-top: 20px;
+}
+/* Products */
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+
+.card {
+  height: 250px;
+  width: 300px;
+
+  background: #ffffff;
+  margin: 25px;
+  transition: transform .5s;
+  box-shadow: 0px 0px 19px #eaeaea;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d80d9;
+  height: 48px;
+  width: 55px;
+  border-radius: 0px 7px 7px 0px;
+  position: relative;
+  top: 10%;
+  margin-right: 3%;
+  padding: 20px;
+}
+/* .card-icon img{
+  width: 30px;
+  height: 30px;
+} */
+.card-body {
+  position: relative;
+  top: 5%;
+}
+.card-body h3 {
+  font-weight: 500;
+  color: #242424;
+}
+
+.card-body p {
+  color: #4d4d4d;
+}
+
+.card:first-child {
+  background-color: inherit;
+  border: none;
+  box-shadow: none;
+  background: url("../img/assets/product\ background\ icon.png");
+  background-repeat: no-repeat;
+  transition: none;
+  object-fit: cover;
+   
+}
+.card:first-child:hover{
+  transform: none;
+}
+.card:first-child h3 {
+  text-decoration: underline;
+  text-decoration-color: #1566d1;
+  text-decoration-thickness: 5px;
+}
+/* Newsletter */
+.newsletter {
+  display: flex;
+
+  background: white;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+
+  width: 50%;
+  margin: 30px auto;
+
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Footer */
+
+.footer {
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.footer h6,
+i {
+  color: #1566d1;
+
+  margin-right: 15px;
+}
+.footer a {
+  display: block;
+  font-weight: 500;
+  /* color: #404040; */
+
+  text-decoration: none;
+  margin: 12px 0;
+}
+.footer > * {
+  margin: 15px 15px;
+}
+
+.skygoal-logo,
+.footer-our-products a,
+.footer-about-company a {
+  color: #767676;
+}
+
+.contact-us a {
+  color: #404040;
+}
+.footer-goal{
+  /* width: 400px; */
+  /* flex: 1; */
+  flex-basis: 25%;
+}
+.footer-goal .skygoal-logo {
+  /* padding: 10px; */
+}
+.footer-goal p {
+  /* width: 250px; */
+  /* margin: 0 auto; */
+  padding: 10px;
+}
+
+.footer-goal .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+/* Media Queries */
+
+@media (max-width: 767px) {
+  .products-dropdown,
+  .companies-dropdown,
+  .institutes-dropdown {
+    flex-direction: column;
+  }
+  .login-signup {
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    align-items: unset;
+  }
+
+  .sign-up {
+    width: 50%;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+  .hero .left-side .intro-text {
+    text-align: center;
+
+    font-size: 1.7rem;
+  }
+
+  /* CSS for carousel slider */
+  div.carousel-inner {
+    height: 350px !important;
+    width: 250px;
+
+    margin: 0px auto 0 auto;
+  }
+
+  /* Products section */
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    margin-left: -20px;
+  }
+
+  .card {
+    height: 250px;
+    width: 300px;
+  }
+
+  .card-icon {
+    top: 15%;
+    margin-right: 4%;
+  }
+
+  .card-body {
+    top: 8%;
+  }
+
+  .card:first-child {
+    margin-bottom: -100px;
+  }
+
+  .newsletter {
+    padding: 10px 0;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  /* footer */
+  .footer {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .footer > * {
+    margin: 15px 0;
+  }
+
+  .footer-goal .social-media {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .hero .left-side .intro-text {
+    font-size: 2rem;
+  }
+
+  .login-signup {
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    align-items: unset;
+  }
+
+  .sign-up {
+    width: 50%;
+  }
+
+  /* CSS for carousel slider */
+  div.carousel-inner {
+    height: 350px !important;
+    width: 250px;
+
+    margin: 0px auto 0 auto;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .navbar-nav {
+    position: relative;
+    left: 6%;
+  }
+
+  .hero {
+    justify-content: space-around;
+  }
+
+  .hero .left-side .intro-text {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .hero .left-side .intro-text {
+    font-size: 3.1rem;
+  }
+
+  .navbar-nav {
+    position: relative;
+    left: 10%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2561px) {
+  .navbar-nav {
+    position: relative;
+    left: 10%;
+  }
+
+  .hero .left-side .intro-text {
+    font-size: 3.5rem;
+  }
+}

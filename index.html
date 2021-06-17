@@ -43,8 +43,7 @@
           <img
             src="./img/assets/SKYGOAL LOGO BETA VESRSION.png"
             alt=""
-            width="100"
-            height="100"
+             
         /></a>
         <button
           class="navbar-toggler"
@@ -83,15 +82,15 @@
                   <ul>
                     <li class="dropdown-item">
                       <div>
-                        <img src="./img/logos/Arc mini.png" alt="" />
+                       <a href="https://www.arc.skygoal.education/"><img src="./img/logos/Arc mini.png" alt="" /></a> 
                       </div>
 
-                      <div>
-                        <a href="#"><h5>ARC</h5></a>
+                      <div class="description">
+                        <a href="https://www.arc.skygoal.education/"><h5>ARC</h5></a>
 
-                        <p>
-                           ARC is a platform providing Academic <br> courses to the engineering,
-              degree<br> students  and other kinds  of students.
+                        <p class="">
+                           ARC is a platform providing Academic <br>  courses to the engineering,
+              degree <br> students  and other kinds  of students.
   
 
                         </p>
@@ -351,7 +350,7 @@ talent solutions.
               >Login</a
             >
 
-            <a class="nav-link btn btn-primary btn-large sign-up" href="#"
+            <a class="nav-link btn btn-outline-primary btn-large sign-up" href="#"
               >Get Started</a
             >
           </div>
@@ -602,13 +601,13 @@ talent solutions.
         <div class="footer-goal">
           <div class="skygoal-logo">
             <img
-              style="height: 150px; width: 150px;"
+               
               src="./img/assets/SKYGOAL LOGO BETA VESRSION.png"
               alt=""
             />
 
             <p>
-            Sky Goal® is a technology innovation organization focused on the design and development of Ed-tech solutions. Our mission is to revolutionize learning by providing universally accessible, affordable education to students all over the globe through the use of technology.
+            Sky Goal® is a technology innovation organization focused on the design and development of Ed-tech solutions.
             </p>
           </div>
 
@@ -633,7 +632,7 @@ talent solutions.
         <div class="footer-our-products">
           <h5>Our Products</h5>
 
-          <a href="#">ARC</a>
+          <a href="https://www.arc.skygoal.education/">ARC</a>
           <a href="#">Academy</a>
           <a href="#">Edu-News</a>
           <a href="#">Vasu</a>
@@ -710,7 +709,8 @@ talent solutions.
         document.getElementById('navbar_top').classList.add('fixed-top');
         // add padding top to show content behind navbar
         navbar_height = document.querySelector('.navbar').offsetHeight;
-        document.body.style.paddingTop = navbar_height + 'px';
+        console.log(navbar_height);
+        document.body.style.paddingTop = (navbar_height) + 'px';
 
         // adding background color to navbar
 

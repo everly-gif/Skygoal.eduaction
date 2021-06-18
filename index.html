@@ -35,16 +35,20 @@
   </head>
  
   <body>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
     <!-- Navbar -->
 
     <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
-            src="./img/assets/SKYGOAL LOGO BETA VESRSION.png"
+            src="./img/logos/logo.png"
             alt=""
              
         /></a>
+        
         <button
           class="navbar-toggler"
           type="button"
@@ -99,8 +103,7 @@
 
                     <li class="dropdown-item">
                       <div>
-                        
-                       <img src="./img/logos/Academy logo mini.png" alt="" />
+                        <img src="./img/logos/Academy logo mini.png" alt="" />
                       </div>
 
                       <div>
@@ -116,11 +119,11 @@
 
                     <li class="dropdown-item">
                       <div>
-                        <a href="https://news.skygoal.education/">  <img src="./img/logos/Edu logo mini.png" alt="" /></a>
+                        <img src="./img/logos/Edu logo mini.png" alt="" />
                       </div>
 
                       <div>
-                        <a href="https://news.skygoal.education"> <h5>Edu-News</h5></a>
+                        <a href="#"> <h5>Edu-News</h5></a>
 
                         <p>
                           Edu News is another informative tool <br> where the student has the
@@ -251,7 +254,7 @@
                         <a href="#"> <h5>E-Careers</h5></a>
 
                         <p>
-                          Access millions of Jobs /Campus<br />
+                          Access millions of Jobs /Campuses <br />
                           drives with E-careers
                         </p>
                       </div>
@@ -464,31 +467,31 @@ talent solutions.
 
         <div class="card">
           <div class="card-icon">
-   <a href="https://www.arc.skygoal.education/">         <img src="./img/assets/Arc white logo.png" alt="arc-white-logo" /></a>
+            <img src="./img/assets/Arc white logo.png" alt="arc-white-logo" />
           </div>
 
           <div class="card-body">
-     <h3>ARC</h3>
+            <h3>ARC</h3>
             <p class="">
               ARC is a platform providing Academic courses to the engineering,
               degree students and other kinds of students.
             </p>
-            <a href="https://www.arc.skygoal.education/">Learn More</a>
+            <a href="">Learn More</a>
           </div>
         </div>
 
         <div class="card">
           <div class="card-icon">
-        <a href="https://news.skygoal.education"><img src="./img/assets/Edu-news logo.png" alt="edu-news-logo" /></a>
+            <img src="./img/assets/Edu-news logo.png" alt="edu-news-logo" />
           </div>
 
           <div class="card-body">
             <h3>Edu-News</h3>
-         <p class="text-justify">
+            <p class="text-justify">
               Edu News is another informative tool where the student has the
               privilege to access the educational news.
-           </p>
-            <a href="https://news.skygoal.education">Learn More</a>
+            </p>
+            <a href="">Learn More</a>
           </div>
         </div>
         <div class="card">
@@ -603,9 +606,14 @@ talent solutions.
           <div class="skygoal-logo">
             <img
                
-              src="./img/assets/SKYGOAL LOGO BETA VESRSION.png"
+               src="./img/logos/logo.png"
               alt=""
             />
+            <!-- <img
+               
+              src="./img/assets/SKYGOAL LOGO BETA VESRSION.png"
+              alt=""
+            /> -->
 
             <p>
             Sky Goal® is a technology innovation organization focused on the design and development of Ed-tech solutions.
@@ -660,7 +668,7 @@ talent solutions.
             </div>
             <div>
               <h6><i class="fas fa-phone-alt"></i> Call</h6>
-              <a href="tel:18004193878">1800 419 3878</a>
+              <a href="tel:18004193878">1800 41 93878</a>
             </div>
 
             <div>
@@ -699,40 +707,11 @@ talent solutions.
     </script>
 
 
-<script>
-
-  document.addEventListener("DOMContentLoaded", function(){
-  window.addEventListener('scroll', function() {
-
-
-    
-      if (window.scrollY > 50 && window.screen.width>=992) {
-        document.getElementById('navbar_top').classList.add('fixed-top');
-        // add padding top to show content behind navbar
-        navbar_height = document.querySelector('.navbar').offsetHeight;
-        console.log(navbar_height);
-        document.body.style.paddingTop = (navbar_height) + 'px';
-
-        // adding background color to navbar
-
-        document.getElementById('navbar_top').classList.add('bg-white');
-        // document.getElementById('navbar_top').classList.add('navbar-light');
-        
-        
-      } else {
-        document.getElementById('navbar_top').classList.remove('fixed-top');
-        // remove padding top from body
-
-        // remove bg color from navbar
-        document.getElementById('navbar_top').classList.remove('bg-white');
-        // document.getElementById('navbar_top').classList.remove('navbar-light');
-        document.body.style.paddingTop = '0';
-      } 
-  });
-}); 
+<script src="./js/index.js">
+  
 </script>
 
- 
+  
 
   </body>
 </html>

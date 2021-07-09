@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("navbar_top").classList.add("fixed-top");
       // add padding top to show content behind navbar
       navbar_height = document.querySelector(".navbar").offsetHeight;
-      console.log(navbar_height);
+       
       document.body.style.paddingTop = navbar_height + "px";
 
       // adding background color to navbar
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Prevent Right click
-document.addEventListener("contextmenu", (event) => event.preventDefault());
+// document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 
 

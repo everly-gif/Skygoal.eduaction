@@ -12,9 +12,9 @@
 
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap" rel="stylesheet" />
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Custom CSS stylesheet -->
 
     <link rel="stylesheet" href="styles/styles.css" />
@@ -60,7 +60,7 @@
                                     <li class="dropdown-item">
                                         <div>
                                             <a href="https://www.arc.skygoal.education/"><img
-                                                    src="./img/logos/Arc mini.png" alt="" /></a>
+                                                    src="./img/logos/Arc mini.png" alt="arc-mini" /></a>
                                         </div>
 
                                         <div class="description">
@@ -83,7 +83,7 @@
                                         </div>
 
                                         <div>
-                                            <a href="#">
+                                            <a href="https://www.academy.skygoal.education/">
                                                 <h5>Academy</h5>
                                             </a>
 
@@ -101,7 +101,7 @@
                                         </div>
 
                                         <div>
-                                            <a href="#">
+                                            <a href="https://news.skygoal.education/">
                                                 <h5>Edu-News</h5>
                                             </a>
 
@@ -117,7 +117,7 @@
                                         </div>
 
                                         <div>
-                                            <a href="#">
+                                            <a href="https://www.vasu.skygoal.education/">
                                                 <h5>Vasu</h5>
                                             </a>
 
@@ -136,7 +136,7 @@
                                         </div>
 
                                         <div>
-                                            <a href="#">
+                                            <a href="https://www.scholarships.skygoal.education/">
                                                 <h5>Scholarship</h5>
                                             </a>
 
@@ -154,7 +154,7 @@
                                         </div>
 
                                         <div>
-                                            <a href="#">
+                                            <a href="https://www.careers.skygoal.education/">
                                                 <h5>Careers</h5>
                                             </a>
 
@@ -170,7 +170,7 @@
                                         </div>
 
                                         <div>
-                                            <a href="#">
+                                            <a href="https://www.webinars.skygoal.education/">
                                                 <h5>Webinars</h5>
                                             </a>
 
@@ -195,7 +195,7 @@
                                 <ul>
                                     <li class="dropdown-item">
                                         <div>
-                                            <img src="./img/assets/school.png" alt="" />
+                                            <img src="./img/assets/school.png" alt="school-img" />
                                         </div>
 
                                         <div>
@@ -212,7 +212,7 @@
 
                                     <li class="dropdown-item">
                                         <div>
-                                            <img src="./img/assets/provision.png" alt="" />
+                                            <img src="./img/assets/provision.png" alt="provision-img" />
                                         </div>
 
                                         <div>
@@ -319,7 +319,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Careers</a>
+                        <a class="nav-link active" href="" tabindex="-1" aria-disabled="true">Careers</a>
                     </li>
                 </ul>
                 <div class="login-signup">
@@ -350,6 +350,7 @@
             </div>
             <div class="row-img">
 
+                <!-- <img class="img-fluid" src="./img/about/team.png" alt="about-us-img"> -->
                 <img class="img-fluid" src="./img/about/team.png" alt="about-us-img">
             </div>
 
@@ -360,7 +361,8 @@
         <div class="row2">
 
             <div class="row-img">
-                <img class="img-fluid" src="./img/about/mission.png" alt="our-mission-gif">
+                <!-- <img class="img-fluid" src="./img/about/mission.png" alt="our-mission-gif"> -->
+                <img class="img-fluid" style="border-radius: 100%;" src="./img/about/target.gif" alt="our-mission-gif">
 
 
 
@@ -393,7 +395,8 @@
             </div>
             <div class="row-img">
 
-                <img class="img-fluid" src="./img/about/vision.png" alt="our-vision">
+                <!-- <img class="img-fluid" src="./img/about/vision.png" alt="our-vision"> -->
+                <img class="img-fluid" style="border-radius: 100%;" src="./img/about/eye-blink.gif" alt="our-vision">
             </div>
 
         </div>
@@ -472,10 +475,10 @@
             Newsletter
         </h5>
         <!-- newsletter form -->
-        <form action="">
+        <form action="" id="newsletter-form">
             <div class="rounded shadow-sm mb-4">
                 <div class="input-group">
-                    <input id="app" type="email" placeholder="Enter your Email"
+                    <input  id="newsletter-input" type="email" placeholder="Enter your Email"
                         class="form-control border-0 bg-light shadow-none" />
 
                     <div class="input-group-append">
@@ -526,16 +529,17 @@
                 <h5>Our Products</h5>
 
                 <a href="https://www.arc.skygoal.education/">ARC</a>
-                <a href="#">Academy</a>
-                <a href="#">Edu-News</a>
-                <a href="#">Vasu</a>
-                <a href="#">Scholarships</a>
-                <a href="#">Careers</a>
-                <a href="#">Webinars</a>
+                <a href="https://www.academy.skygoal.education/">Academy</a>
+                <a href="https://news.skygoal.education/">Edu-News</a>
+                <a href="https://www.vasu.skygoal.education/">Vasu</a>
+                <a href="https://www.scholarships.skygoal.education/">Scholarships</a>
+                <a href="https://www.careers.skygoal.education/">Careers</a>
+                <a href="https://www.webinars.skygoal.education/">Webinars</a>
             </div>
             <div class="footer-about-company">
                 <h5>About Company</h5>
                 <a href="/about.html">About us</a>
+                <a href="/contact.html">Contact Us</a>
                 <a href="#">Terms & Conditions</a>
                 <a href="#">Privacy policy</a>
                 <a href="#">Refund policy</a>
@@ -547,8 +551,11 @@
                 <!-- Contact details -->
                 <div class="contact-us">
                     <div>
-                        <h6><i class="fas fa-map-marker-alt"></i> Address</h6>
+                        <h6 style="margin-bottom: 20px;"><i class="fas fa-map-marker-alt"></i> Address</h6>
+                        <h6>India</h6>
                         <a href="#">Vijaywada, Andrapradesh</a>
+                         <h6>United States</h6>
+               <a href="#">16192 Coastal Highway Lewes, <br> DE 19958 United States</a>
                     </div>
                     <div>
                         <h6><i class="fas fa-phone-alt"></i> Call</h6>
@@ -580,7 +587,45 @@
 
     </script>
 
+<script>
 
+
+  newsletterForm = document.querySelector('#newsletter-form');
+  newsletterForm.addEventListener('submit', ()=>{
+    event.preventDefault();
+
+email_value = document.querySelector('#newsletter-input').value;
+fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSeSGvjzDfTqyKXUHUQOP88bvzTie4hkUhjV8tcKMHKfh-uOQA/formResponse", {
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "accept-language": "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6",
+    "cache-control": "max-age=0",
+    "content-type": "application/x-www-form-urlencoded",
+    "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    
+     
+  },
+  "referrer": "https://docs.google.com/forms/d/e/1FAIpQLSeSGvjzDfTqyKXUHUQOP88bvzTie4hkUhjV8tcKMHKfh-uOQA/viewform?fbzx=-5848149251703102741",
+  
+  "body": `entry.1649101552=${email_value}&fvv=1&draftResponse=%5Bnull%2Cnull%2C%22-5848149251703102741%22%5D%0D%0A&pageHistory=0&fbzx=-5848149251703102741`,
+  "method": "POST",
+  "mode": "no-cors",
+   
+});
+
+
+  });
+
+
+
+
+</script>
 
 </body>
 

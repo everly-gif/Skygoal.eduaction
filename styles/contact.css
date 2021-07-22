@@ -1,0 +1,55 @@
+ .iframe-container iframe{
+
+width: 100%;
+ 
+
+ }
+
+.contact{
+    margin-bottom: 100px;
+  
+}
+.contact .left-side{
+    flex: 1;
+}
+ 
+
+.get-in-touch {
+    display: flex;
+    justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 50px;
+   
+  
+}
+.get-in-touch .left-side{
+    flex: 1;
+     
+}
+.get-in-touch .left-side h1,.get-in-touch .left-side p{
+    margin-bottom: 40px;
+}
+ .get-in-touch .right-side{
+     flex: 1;
+ }
+ .get-in-touch .right-side form{
+     background-color: white;
+     padding: 30px 10px     ;
+     width: 95%;
+     margin: 0 auto;
+     border-radius: 20px;
+     border: 5px solid #a9cfff ;
+     
+ }
+
+ .send-btn{
+     background-color: #1566d1;
+     color: white;
+      
+     padding: 10px 60px ;
+
+ }
+
+
+
+ 

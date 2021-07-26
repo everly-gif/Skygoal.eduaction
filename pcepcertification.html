@@ -382,7 +382,7 @@
 <div class="right-side">
 
  <form class="row g-3" id="survey-form">
-     <h3>Sign Up Form PCEP Certification</h3>
+     <h3>Sign Up Form</h3>
   <div class="col-md-12">
     <label for="fname" class="form-label">Name</label>
     <input type="text" class="form-control" id="name" placeholder="Type here">
@@ -537,10 +537,10 @@
         event.preventDefault();
 
 
-        const name = document.querySelector('#name').value;
-        const email = document.querySelector('#email').value;
-        const phone = document.querySelector('#phone').value;
-        const occupation = document.querySelector('#occupation').value;
+        const name = document.querySelector('#name');
+        const email = document.querySelector('#email');
+        const phone = document.querySelector('#phone');
+        const occupation = document.querySelector('#occupation');
         
         fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfF4N5Gn9msTja8Q76m9vfMD3Xj4TaOyezaiXeT7Im7IvenaQ/formResponse", {
   "headers": {
@@ -560,10 +560,18 @@
   },
   "referrer": "https://docs.google.com/forms/d/e/1FAIpQLSfF4N5Gn9msTja8Q76m9vfMD3Xj4TaOyezaiXeT7Im7IvenaQ/viewform?fbzx=-595757117659134422",
   "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": `entry.920813145=${name}&entry.1285685430=${email}&entry.93114316=${phone}&entry.1987863373=${occupation}&entry.1987863373_sentinel=&fvv=1&draftResponse=%5Bnull%2Cnull%2C%22-595757117659134422%22%5D&pageHistory=0&fbzx=-595757117659134422`,
+  "body": `entry.920813145=${name.value}&entry.1285685430=${email.value}&entry.93114316=${phone.value}&entry.1987863373=${occupation.value}&entry.1987863373_sentinel=&fvv=1&draftResponse=%5Bnull%2Cnull%2C%22-595757117659134422%22%5D&pageHistory=0&fbzx=-595757117659134422`,
   "method": "POST",
   "mode": "no-cors",
   "credentials": "include"
+}).then(()=>{
+
+alert("Data has been submitted!");
+document.querySelector('#name').value="";
+document.querySelector('#email').value="";
+document.querySelector('#phone').value="";
+document.querySelector('#occupation').value="";
+
 });
 
 

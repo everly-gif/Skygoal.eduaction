@@ -29,10 +29,12 @@ img.academy-logo {
   height: 40px;
   width: 200px;
   margin-top: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .coming-soon {
   display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .left-side,
 .right-side {
@@ -65,4 +67,24 @@ img.academy-logo {
 }
 .right-side img{
   width: 100%;
+}
+
+
+/* Responsive media queries */
+@media screen and (max-width: 767px) {
+
+  .coming-soon{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-side,
+  .right-side, .info {
+    text-align: center;
+      
+  }
+  .left-side p.info {
+  width: 100%;
+}
 }

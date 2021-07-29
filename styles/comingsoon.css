@@ -8,36 +8,61 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-    
   overflow-x: hidden;
+  background-image: url('../img/comingsoon/coming\ soon\ 1.svg');
+  /* background-repeat: no-repeat; */
+  /* background-position: right; */
+  /* background-position-y: top; */
+    /* background-attachment: scroll; */
+    /* background-size: 100% ; */
+    /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+    }  
+  
+  
  
+
+img.academy-logo {
+  height: 40px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+.coming-soon {
+  display: flex;
+}
+.left-side,
+.right-side {
+  /* flex: 1; */
+  /* flex-basis: 50%; */
 }
 
-
- img.academy-logo{
-
-height: 40px;
-width: 200px;
-margin-top: 20px;
-margin-bottom: 150px;
+.left-side h2 {
+  text-decoration: underline rgb(17, 72, 175) 2px;
+  margin-bottom: 30px;
 }
-
-.coming-soon h2{
-text-decoration: underline rgb(17, 72, 175) 2px;
-}
-.coming-soon p.info{
+.left-side p.info {
   width: 50%;
 }
 
-
 .social-icons {
   margin-bottom: 20px;
- 
 }
 .social-icons i {
   border: 2px solid;
   border-radius: 50%;
   padding: 5px;
-   
- margin-right: 10px;
+
+  margin-right: 20px;
+}
+
+.right-side{
+
+ 
+}
+.right-side img{
+  width: 100%;
 }
